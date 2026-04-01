@@ -1,0 +1,28 @@
+{
+  "scenario_name": "show",
+  "business_id": "SHOW-PO-2026-001",
+  "company_name": "华东演示科技有限公司",
+  "vendor_name": "苏州启明设备有限公司",
+  "invoice_number": "SHOW20260001",
+  "contract_number": "SHOW-PO-2026-001",
+  "receipt_number": "SHOW-GRN-2026-001",
+  "voucher_number": "AI-202603-0001",
+  "invoice_file": "data/show/raw/show_invoice.txt",
+  "contract_file": "data/show/raw/show_contract.txt",
+  "receipt_file": "data/show/raw/show_receipt.txt",
+  "voucher_reference": "example/reference/记账凭证.png",
+  "voucher_show_reference": "data/show/derived/show_voucher_reference.txt",
+  "tax_reference": "example/reference/增值税及附加税费申报表（一般纳税人适用）.xls",
+  "tax_show_reference": "data/show/derived/show_tax_declaration_reference.txt",
+  "balance_sheet_reference": "example/reference/A06155《资产负债表（适用执行企业会计制度的企业）》.docx",
+  "balance_sheet_show_reference": "data/show/derived/show_balance_sheet_reference.txt",
+  "profit_statement_reference": "example/reference/A06156《利润表（适用执行企业会计制度的企业）》.docx",
+  "profit_statement_show_reference": "data/show/derived/show_profit_statement_reference.txt",
+  "expected": {
+    "business_type": "采购类",
+    "match_status": "matched",
+    "voucher_status": "审核通过",
+    "tax_report_status": "审核通过",
+    "financial_report_status": "审核通过"
+  }
+}
