@@ -305,83 +305,10 @@ DEMO_RUN_MODE=full
 - `.env.example`
 - `README.md`
 
-使用时必须保留整个目录结构，**不能只单独拷 exe**。
 
----
 
-## 6. GitHub 分发方式
 
-### 6.1 仓库里放什么
-GitHub 仓库建议放：
-- 全部源码
-- `.env.example`
-- `README.md`
-- 打包脚本和 `spec`
-- `data/`
-- `example/`
-
-### 6.2 仓库里不要放什么
-不要提交：
-- `.env`
-- `.claude/`
-- `dist/`
-- `build/`
-- `dist_release*/`
-- `dist_portable_launcher/`
-- `portable_release/`
-- 缓存文件和日志
-
-### 6.3 GitHub Releases 建议
-建议上传：
-- `portable_release/demoV1-portable/` 压缩包
-
-例如：
-- `demoV1-portable-win64.zip`
-
----
-
-## 7. U 盘展示方式
-
-直接拷贝整个：
-- `portable_release/demoV1-portable/`
-
-### 7.1 演示模式
-- 适合现场快速展示
-- 无需 API
-
-### 7.2 完整模式
-- 先复制 `.env.example` 为 `.env`
-- 填写自己的 API
-- 再双击 exe 并选择完整模式
-
----
-
-## 8. 打包说明
-
-### 8.1 基础 launcher 打包
-```bash
-pyinstaller demoV1.spec
-```
-或：
-```bash
-build_exe.bat
-```
-
-### 8.2 便携发布包组装
-```bash
-python assemble_portable_release.py
-```
-或：
-```bash
-build_portable_release.bat
-```
-
-组装完成后，便携目录位于：
-- `portable_release/demoV1-portable/`
-
----
-
-## 9. 常见问题
+## 6. 常见问题
 
 ### Q1. 没有 API 能用吗？
 可以。
@@ -405,29 +332,7 @@ build_portable_release.bat
 放在：
 - `demoV1-launcher.exe` 同级目录
 
-### Q5. GitHub 版和 U 盘版有什么区别？
-- GitHub 仓库：放源码
-- GitHub Releases：放便携压缩包
-- U 盘版：直接拷贝便携目录
-
----
-
-## 10. 当前建议的最终分发方式
-
-### GitHub
-- 仓库上传源码
-- Releases 上传便携包 zip
-
-### U 盘
-- 拷贝整个 `demoV1-portable/`
-
-### 本地演示
-- 双击 `demoV1-launcher.exe`
-- 选演示模式
-
----
-
-## 11. 备注
+## 7. 备注
 本项目当前重点是：
 - 演示流程可走通
 - 关键页面可对照官方参考件
