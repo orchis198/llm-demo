@@ -193,6 +193,7 @@
 - `stage_pages/`：五阶段业务页面
 - `tests/`：测试用例
 - `ui/`：共享 UI 状态与组件
+- _internal.part*.rar：包依赖
 
 ### 3.3 各核心模块功能解释
 #### `engines/`
@@ -227,7 +228,6 @@
 
 ### 4.1 配置文件
 先复制：
-
 - `.env.example` → `.env`
 
 ### 4.2 示例
@@ -249,6 +249,7 @@ DEMO_RUN_MODE=demo
 - **完整模式**：必须先配置 API
 
 ## 5. 启动方式
+- 解压_internal.part01.rar
 
 ## 5.1 源码运行
 ```bash
@@ -258,7 +259,6 @@ streamlit run app.py
 源码运行时：
 - 默认可通过 `.env` 控制运行模式
 - 如果想完整模式，请在 `.env` 中设置：
-
 ```env
 DEMO_RUN_MODE=full
 ```
@@ -268,11 +268,8 @@ DEMO_RUN_MODE=full
 - `demoV1-launcher.exe`
 
 启动器会先让您选择：
-1. 演示模式
-2. 完整模式
-
-- 演示模式：无需 API
-- 完整模式：需先配置 `.env`
+1. 演示模式：无需 API
+2. 完整模式：需先配置 `.env
 
 ## 5.3 便携版运行
 便携版目录中会包含：
@@ -294,10 +291,10 @@ DEMO_RUN_MODE=full
 - 没有 `.env`
 - `.env` 没填 API
 - `LLM_ENABLED` 没设为 `true`
+- 没解压_internal，缺少依赖
 
 ### Q3. `.env` 放哪里？
-放在：
-- `demoV1-launcher.exe` 同级目录
+放在：- `demoV1-launcher.exe` 同级目录
 
 ## 7. 备注
 本项目当前重点是：
